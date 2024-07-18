@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Necks Team Oficial</title>
+</head>
+<body>
+    <h1><span style="color: yellow;">Bem-vindo a Empresa de Xiters e modificacoes</span></p> <span style="color: blue;">Necks Team</span></p></h1>
+    <p><span style="color: purple;">Este e o ponto de partida para voce se tornar um cliente.</span></p></p>
+    
+    <h2>Termos</h2>
+    <p>-Voce Possui Direito a 1 Reset</p>
+    <p>-Descontos Somente Apos a Primeira Compra</p>
+    <p>-Se torne um Menbro Vip para possuir Direito a varias Vantagens</p>
+    <p>-Entre em nosso Telegram Para possuir Suporte 24h</p>
+    <p>-Unicos Vendedores oficiais @Hyre @Gabe</p>
+    
+    <h3><span style="color: pink;">Script Pc</span>.</p></h3>
+    <ul>
+        <li>Script Brutal  80,00$</li>
+        <li>Script Normal  60,00$</li>
+        <li>Script Lite  30,00$</li>
+    </ul>
+    
+    <h3><span style="color: pink;">Mods Menu Pc "Precisa de Root"</span>.</p></h3>
+    <ul>
+        <li>Mod Menu Brutal 80,00$</li>
+        <li>Mod Menu Normal 70,00$</li>
+        <li>Mod Menu Lite  40,00$</li>
+    </ul>
+    <h3><span style="color: #FFFF00;">Mod Menu Mobile</span>.</p></h3>
+    <ul>
+        <li>Mod Menu Brutal  70,00$</li>
+        <li>Mod Menu Normal  50,00$</li>
+        <li>Mod Menu Lite  40,00$</li>
+    </ul>
+    
+    <h3><span style="color: pink;">Script Mobile "Precisa usar Virtual"</span>.</p></h3>
+    <ul>
+        <li>Mod Menu Brutal 60,00$</li>
+        <li>Mod Menu Normal 50,00$</li>
+        <li>Mod Menu Lite  30,00$</li>
+    </ul>
+    
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão WhatsApp</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #25d366; /* Cor do WhatsApp */
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openWhatsApp()">Compre Agora!</button>
+
+    <script>
+        function openWhatsApp() {
+            var phoneNumber = '5588999208055'
+            var message = 'Ola, gostaria de efetuar uma compra.'
+            var url = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Regressivo</title>
+    <style>
+        #cronometro {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cronometro">10:00</div>
+
+    <script>
+        let tempo = 600; // 10 minutos em segundos
+        const cronometroDisplay = document.getElementById('cronometro');
+
+        function formatarTempo(segundos) {
+            const minutos = Math.floor(segundos / 60);
+            const segundosRestantes = segundos % 60;
+            return `${String(minutos).padStart(2, '0')}:${String(segundosRestantes).padStart(2, '0')}`;
+        }
+
+        function atualizarCronometro() {
+            cronometroDisplay.textContent = formatarTempo(tempo);
+            if (tempo > 0) {
+                tempo--;
+                setTimeout(atualizarCronometro, 1000); // Chama a função novamente após 1 segundo
+            } else {
+                cronometroDisplay.textContent = "Tempo Esgotado!";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', atualizarCronometro);
+    </script>
+</body>
+</html>
